@@ -12,17 +12,17 @@
 ## 4. get the value of the mean
 
 makeVector <- function(x = numeric()) {
-m <- NULL
-set <- function(y) {
-  x <<- y
-  m <<- NULL
-}
-get <- function() x
-setmean <- function(mean) m <<- mean
-getmean <- function() m
-list(set = set, get = get,
-     setmean = setmean,
-     getmean = getmean)
+  m <- NULL
+  set <- function(y) {
+    x <<- y
+    m <<- NULL
+  }
+  get <- function() x
+  setmean <- function(mean) m <<- mean
+  getmean <- function() m
+  list(set = set, get = get,
+       setmean = setmean,
+       getmean = getmean)
 }
 
 ## The following function calculates the mean of the 
